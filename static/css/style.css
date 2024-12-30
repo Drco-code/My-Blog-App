@@ -1,0 +1,221 @@
+/* Global Styles */
+body {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #ff5722, #ffcc80);
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav a {
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ff5722;
+}
+
+/* Blog Home */
+.blog-home {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ffa500, #ff5722);
+  color: #fff;
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Blog List */
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.blog-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.blog-card h2 {
+  font-size: 1.6rem;
+  color: #ff5722;
+  margin-bottom: 0.8rem;
+}
+
+.blog-card p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.read-more {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #ff5722, #ffcc80); /* Subtle orange gradient */
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 2px solid #ddd;
+}
+
+
+/* Banner */
+.banner {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form-submit {
+  padding: 0.5rem;
+  max-width: 360px;
+  background-color: #ff5722;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #e64a19;
+}
+
+.form-with-validation div {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+.form-with-validation input {
+  padding: 0.5rem;
+  max-width: 600px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.helptext {
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  color: #555;
+}
+
+.helptext ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.errorlist {
+  color: #d32f2f;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.errorlist li::marker {
+  content: "🚨 ";
+}
+
+/* Logout Button */
+.logout {
+  display: inline-block;
+}
+
+.logout-button {
+  font-size: 1.2rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  opacity: 0.85;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .blog-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .read-more {
+    font-size: 0.9rem;
+  }
+}
